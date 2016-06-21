@@ -1,0 +1,16 @@
+<table class="table striped">
+  <thead>
+    <tr>
+      <th class="text-center">Name</th>
+      <th class="text-center">Email</th>
+      <th class="text-center">Phone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="text-center" ng-repeat="customer in customers">
+      <td>{{ customer.name }}</td>
+      <td>{{ customer.email }}</td>
+      <td>{{ customer.phone }}</td>
+    </tr>
+  </tbody>
+</table>
