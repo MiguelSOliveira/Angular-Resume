@@ -1,5 +1,39 @@
+$bg-color: #EEEEEE;
+$sidebar-color: #212121;
+
+@mixin justify() {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 body {
-  background-color: whitesmoke;
+  background-color: $bg-color;
+}
+
+.active {
+  color: orange;
+  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-color: orange;
+}
+
+div#first {
+  margin-left: 35%;
+  font-size: 20px;
+  float: left;
+  @include justify();
+}
+
+div#second {
+  margin-right: 35%;
+  font-size: 20px;
+  float: right;
+}
+
+#main_photo {
+  width: 30%;
+  height: 50%;
+  margin: 0 auto;
+  margin-top: 10%;
 }
 
 .container {
