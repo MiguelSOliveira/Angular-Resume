@@ -1,7 +1,7 @@
 app.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
     .when('/', {
-      template: '<h1>Main View</h1>',
+      template: require('./../about/about.html'),
     })
     .when('/customers', {
       template: require('./../Customers/Customers.html'),

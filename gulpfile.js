@@ -5,7 +5,7 @@ global.destFolder = './build';
 
 var reload = global.bs.reload;
 
-gulp.task('default', ['js', 'sass', 'html'], function () {
+gulp.task('default', ['js', 'sass', 'html', 'images'], function () {
   bs.init({
     server: {
       baseDir: global.destFolder,
