@@ -1,5 +1,45 @@
 $bg-color: #EEEEEE;
-$sidebar-color: #212121;
+$sidebar-color: #1A237E;
+
+body {
+	font-family: "Times New Roman", Georgia, Serif;
+}
+
+a {
+	font-weight: bold;
+}
+
+.fa-user {
+	color: #03A9F4;
+}
+
+.fa-graduation-cap {
+	color: #FF6F00;
+}
+
+.fa-laptop {
+	color: #00C853;
+}
+
+.fa-puzzle-piece {
+	color: #6200EA;
+}
+
+.fa-suitcase {
+	color: #B71C1C;
+}
+
+.fa-code-fork {
+	color: #D500F9;
+}
+
+.fa-phone {
+	color: #64DD17;
+}
+
+.fa-arrow-circle-up {
+	color: #FF3D00;
+}
 
 @mixin justify() {
   text-align: justify;
@@ -14,6 +54,10 @@ body {
   color: orange;
   -webkit-text-stroke-width: 2.5px;
   -webkit-text-stroke-color: orange;
+}
+
+h4.description {
+  @include justify();
 }
 
 div#first {
@@ -49,7 +93,7 @@ div#second {
   height: 100%;
   margin-left: -250px;
   overflow-y: auto;
-  background: black;
+  background: $sidebar-color;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
