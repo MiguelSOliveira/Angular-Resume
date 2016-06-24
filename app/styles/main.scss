@@ -1,5 +1,53 @@
-$bg-color: #EEEEEE;
+$bg-color: #FFF;
 $sidebar-color: #1A237E;
+
+@import url(http://fonts.googleapis.com/css?family=Satisfy);
+
+img.img_post_it {
+	width: 250px;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
+div.row {
+	display: inline-block;;
+}
+
+.banner {
+	width: 90%;
+}
+
+.quote-container {
+  margin-top: 50px;
+  position: relative;
+}
+
+.note {
+  color: #333;
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Satisfy;
+  font-size: 30px;
+  box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
+}
+
+.note .author {
+  display: block;
+  margin: 40px 0 0 0;
+  text-align: right;
+}
+
+.yellow {
+  background: #eae672;
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+
 
 body {
 	font-family: "Times New Roman", Georgia, Serif;
@@ -46,7 +94,7 @@ a {
   text-justify: inter-word;
 }
 
-body {
+body, .jumbotron {
   background-color: $bg-color;
 }
 
@@ -56,8 +104,12 @@ body {
   -webkit-text-stroke-color: orange;
 }
 
-h4.description {
+h4.description, .justify {
   @include justify();
+}
+
+.app, h1 {
+	font-family: Satisfy;
 }
 
 div#first {
