@@ -3,9 +3,11 @@ app.config(['$routeProvider', function ($routeProvider) {
     .when('/', {
       template: require('./../about/about.html'),
     })
-    .when('/customers', {
-      template: require('./../Customers/Customers.html'),
-      controller: 'Customers'
+    .when('/web_dev', {
+      template: require('./../web_projects/web_projects.html'),
+    })
+    .when('/android_apps', {
+      template: require('./../android_apps/android_apps.html'),
     })
     .otherwise( { redirectTo: '/' });
 }]);
