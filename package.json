@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "app": "gulp"
   },
   "author": "",
   "license": "ISC",
@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "angular": "^1.5.7",
-    "angular-animate": "^1.5.7",
-    "angular-route": "^1.5.7"
+    "angular-route": "^1.5.7",
+    "gulp": "^3.9.1"
   }
 }
